@@ -1,0 +1,34 @@
+1. What is data binding?
+- Data binding is a mechanism in Angular that connects the component's data and logic 
+  with the HTML template displayed in the browser.
+
+  The four types of data binding are:
+
+  1. Interpolation
+
+- Displays component data as text in the browser.
+- Commonly used for names, marks, messages, and calculated values.
+- Angular evaluates the expression and displays its result.
+Example in real life: Displaying a student's name on a result page.
+
+2. Property binding
+
+- Sets a property of an HTML element or child component.
+- Used to control element behavior and appearance.
+- Common uses include disabling a button, setting an image source, and controlling element properties.
+Example in real life: Disabling the submit button until the required information is available.
+
+3. Event binding
+
+- Allows Angular to respond to user actions.
+- The event triggers a method or expression in the component.
+- Common events include clicks, keyboard input, and form submissions.
+Example in real life: A user clicks the submit button, and the application processes the result.
+
+4. Two-way data binding
+
+- Synchronizes a component property with an input's value.
+- When the user changes the input, the component property updates.
+- When the component property changes, the input reflects the new value.
+- Commonly used in forms and editable fields.
+Example in real life: A student edits their name in a form, and the application keeps the corresponding component property synchronized.
