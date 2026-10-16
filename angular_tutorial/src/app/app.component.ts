@@ -9,6 +9,9 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular_tutorial';
-
-}
+ navigationItem = [
+    {name: "Home", url: "/home", icon: "🏠" },
+    {name: "About", url: "/about", icon: "💡"},
+    {name: "Angular Fundamentals", url: "/angular-fundamentals", icon: "🅰️"}
+  ]
+};
