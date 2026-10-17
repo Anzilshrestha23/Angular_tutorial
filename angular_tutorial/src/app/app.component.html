@@ -1,6 +1,6 @@
 <nav class="navbar d-flex justify-content-start  ">
   @for(item of navigationItem; track item.name){
-    <a class= "nav-item text-decoration-none mx-2" [routerLink]="item.url">
+    <a class= "nav-item text-decoration-none mx-2 text-dark" [routerLink]="item.url">
       <span>{{ item.icon }}</span>
       <span>{{ item.name }}</span>
     </a>
