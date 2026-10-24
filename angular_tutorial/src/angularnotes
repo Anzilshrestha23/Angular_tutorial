@@ -1,4 +1,4 @@
-1. What is data binding?
+ What is data binding?
 - Data binding is a mechanism in Angular that connects the component's data and logic 
   with the HTML template displayed in the browser.
 
@@ -17,14 +17,33 @@ Example in real life: Displaying a student's name on a result page.
 - Used to control element behavior and appearance.
 - Common uses include disabling a button, setting an image source, and controlling element properties.
 Example in real life: Disabling the submit button until the required information is available.
+ 
+ 
+ 1. Button Disabled State
+ <button [disabled]="isDisabled">Save</button>
+
+ 2. Image Binding
+ <img [src]="imageUrl" [alt]="imageDescription">
+
+ 3. Input Value Binding
+<input [value]="studentName">
+
+ 4. CSS Class Binding
+ <p [class.active]="isActive">Angular Learner</p>
+
+
+ 5. CSS Style Binding
+ <p [style.color]="textColor">Learn Angular</p>
+
 
 3. Event binding
 
 - Allows Angular to respond to user actions.
 - The event triggers a method or expression in the component.
 - Common events include clicks, keyboard input, and form submissions.
-Example in real life: A user clicks the submit button, and the application processes the result.
 
+Example in real life: A user clicks the submit button, and the application processes the result.
+  
 4. Two-way data binding
 
 - Synchronizes a component property with an input's value.
