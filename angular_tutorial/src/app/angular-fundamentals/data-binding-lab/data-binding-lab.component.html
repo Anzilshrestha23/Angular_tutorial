@@ -1,5 +1,22 @@
 Hey, {{name}}
 <button class="mybtn" [disabled]="isoff">MY button</button>
-enter your name 
-<input [value]="studentName">
-<button (click)="sayhi()">Let me greet</button>
+Enter your name: <input type="text" [(ngModel)]="username">
+
+<label class="text-success fw-bold">Course: </label>
+<select [(ngModel)]="selectedCourse">
+  <option value="Angular">Angular</option>
+  <option value=".NET">.NET</option>
+  <option value="SQL">SQL</option>
+</select>
+
+<label class="text-success fw-bold">Character: </label>
+<select [(ngModel)]="character">
+    <option value="hero">Spiderman</option>
+    <option value="superman">Superman</option>
+</select>
+
+<label>
+    <input type="checkbox" >
+    Currently a student.
+</label>
+

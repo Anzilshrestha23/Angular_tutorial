@@ -13,7 +13,7 @@ export class AppComponent {
     {name: "Home", url: "/home", icon: "🏠" },
     {name: "About", url: "/about", icon: "💡"},
     {name: "Angular Fundamentals", url: "/angular-fundamentals", icon: "🅰️"},
-    {name: "Data-binding-lab", url: "/data-binding", icon: "🔗"},
+  
   ]
 
   

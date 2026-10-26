@@ -2,52 +2,23 @@
 - Data binding is a mechanism in Angular that connects the component's data and logic 
   with the HTML template displayed in the browser.
 
-  The four types of data binding are:
+ Think of these four types as four tools. You don't use a hammer to measure temperature, and you don't use event binding just to display a student's name.
 
-  1. Interpolation
+Binding type	        Direction	            Main syntax       	Purpose
 
-- Displays component data as text in the browser.
-- Commonly used for names, marks, messages, and calculated values.
-- Angular evaluates the expression and displays its result.
-Example in real life: Displaying a student's name on a result page.
+Interpolation     	Component → template	    {{ }}            	Display a value as text
+Property binding	  Component → template	    [property]	      Set an element or component property
+Event binding	      Template → component	    (event)	          Respond to user actions
+Two-way binding	    Both directions	          [(ngModel)]	      Keep an input and component value synchronized
 
-2. Property binding
-
-- Sets a property of an HTML element or child component.
-- Used to control element behavior and appearance.
-- Common uses include disabling a button, setting an image source, and controlling element properties.
-Example in real life: Disabling the submit button until the required information is available.
- 
- 
- 1. Button Disabled State
- <button [disabled]="isDisabled">Save</button>
-
- 2. Image Binding
- <img [src]="imageUrl" [alt]="imageDescription">
-
- 3. Input Value Binding
-<input [value]="studentName">
-
- 4. CSS Class Binding
- <p [class.active]="isActive">Angular Learner</p>
+Memorize the direction and purpose, not just the symbols. That is what lets you choose the correct binding when building a real application.
 
 
- 5. CSS Style Binding
- <p [style.color]="textColor">Learn Angular</p>
+Practical uses:
 
+1. Interpolation: for displaying the text in the ui
+2. Property binding: Suppose you want a button to be disabled when a student is not logged in.
+3. Event binding: Now let the user increase the counter.
+4. Two way binding: Suppose the user types their name into an input box, and you want the component property to reflect the new value while also displaying it on the page.
 
-3. Event binding
-
-- Allows Angular to respond to user actions.
-- The event triggers a method or expression in the component.
-- Common events include clicks, keyboard input, and form submissions.
-
-Example in real life: A user clicks the submit button, and the application processes the result.
-  
-4. Two-way data binding
-
-- Synchronizes a component property with an input's value.
-- When the user changes the input, the component property updates.
-- When the component property changes, the input reflects the new value.
-- Commonly used in forms and editable fields.
-Example in real life: A student edits their name in a form, and the application keeps the corresponding component property synchronized.
+  we must import the FormsModule in the component we are using to enable the [(ngModel)]
