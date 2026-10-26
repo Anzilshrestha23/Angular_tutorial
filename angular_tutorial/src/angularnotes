@@ -1,4 +1,6 @@
- What is data binding?
+****Topic: Data-binding
+
+1. What is data binding?
 - Data binding is a mechanism in Angular that connects the component's data and logic 
   with the HTML template displayed in the browser.
 
@@ -16,9 +18,81 @@ Memorize the direction and purpose, not just the symbols. That is what lets you 
 
 Practical uses:
 
-1. Interpolation: for displaying the text in the ui
-2. Property binding: Suppose you want a button to be disabled when a student is not logged in.
-3. Event binding: Now let the user increase the counter.
-4. Two way binding: Suppose the user types their name into an input box, and you want the component property to reflect the new value while also displaying it on the page.
+    1. Interpolation: for displaying the text in the ui
+    2. Property binding: Suppose you want a button to be disabled when a student is not logged in.
+    3. Event binding: Now let the user increase the counter.
+    4. Two way binding: Suppose the user types their name into an input box, and you want the component property to reflect the new value while also displaying it on the page.
 
   we must import the FormsModule in the component we are using to enable the [(ngModel)]
+
+
+****Topic: Directives and Control flow
+
+ What is directive?
+ -A directive is an Angular class that adds behavior to an element or changes how an element is presented.
+
+Imagine you're building a student dashboard. You need to:
+- Display “Pass” when marks are at least 40.
+- Display a list of students.
+- Change a student's result color.
+- Hide a login button after the user logs in.
+Angular provides tools for these jobs so you don't have to manually manipulate the DOM for every change.
+
+The DOM, or Document Object Model, is the browser's representation of the HTML page.
+
+
+The three categories
+
+1. Attribute directives
+
+Change the appearance or behavior of an existing element.
+
+Examples: NgClass, NgStyle.
+
+Think: “Keep the button, but change its color.”
+
+
+
+
+2. Structural directives
+
+Traditionally, these create, repeat, or remove views.
+
+Examples: *ngIf, *ngFor, and ngSwitch. (from the angular 17 it has modified as @if, @for, @switch)
+
+Think: “Show the message only when the student passes.”
+
+
+
+
+3. Components
+
+A component is a special kind of directive with a template.
+
+Examples: AppComponent, StudentCardComponent.
+
+Think: “Create a reusable student card containing its own HTML and logic.”
+
+
+Here are the common operators you'll use:
+
+| Operator | Meaning | Example |
+|---|---|---|
+| > | Greater than | marks > 40 |
+| < | Less than | marks < 40 |
+| >= | Greater than or equal to | marks >= 40 |
+| <= | Less than or equal to | marks <= 40 |
+| === | Strict equality | grade === 'A' |
+| !== | Strict inequality | grade !== 'F' |
+| && | AND: both conditions true | marks >= 40 && isLoggedIn |
+| || | OR: at least one condition true | marks >= 40 || hasGraceMarks |
+| ! | NOT: reverses a Boolean | !isLoggedIn |
+
+When should you use @if?
+Use it when the UI depends on a condition:
+- Login status
+- Loading and error messages
+- Pass/fail results
+- Empty shopping carts
+- Showing or hiding sections
+- Permission-dependent UI

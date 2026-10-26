@@ -1,0 +1,20 @@
+<div>Enter your number:<input type="number" [(ngModel)]="marks">
+
+@if(marks>=80){
+<p>Distinction</p>
+}
+@else if(marks>=60){
+    <p>First division</p>
+}
+@else if(marks>=70){
+    <p>Second division</p>
+}
+@else if(marks>=40){
+    <p>Pass</p>
+}
+@else{
+    <p>Fail</p>
+}
+
+</div>
+

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { DataBindingLabComponent } from './data-binding-lab/data-binding-lab.component';
+import { DirectivesControlFlowComponent } from './directives-control-flow/directives-control-flow.component';
 
 @Component({
   selector: 'app-angular-fundamentals',
   standalone: true,
-  imports: [StringInterpolationComponent , DataBindingLabComponent],
+  imports: [ DataBindingLabComponent , DirectivesControlFlowComponent],
   templateUrl: './angular-fundamentals.component.html',
   styleUrl: './angular-fundamentals.component.css'
 })
