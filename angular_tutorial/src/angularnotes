@@ -96,3 +96,12 @@ Use it when the UI depends on a condition:
 - Empty shopping carts
 - Showing or hiding sections
 - Permission-dependent UI
+
+**Multiple cases with @switch
+
+What problem does @switch solve?
+Suppose you have a variable called userRole that can be "admin", "student", or "teacher".
+
+You want to show a different dashboard message for each role.
+
+You could write several @if conditions, but @switch is usually clearer when you are checking one expression against several specific values.

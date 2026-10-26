@@ -1,4 +1,4 @@
-<div>Enter your number:<input type="number" [(ngModel)]="marks">
+<div>Enter your marks:<input type="number" [(ngModel)]="marks">
 
 @if(marks>=80){
 <p>Distinction</p>
@@ -17,4 +17,26 @@
 }
 
 </div>
+
+
+<input type="text" [(ngModel)]="grade">
+
+@switch (grade) {
+@case ('A'){
+            <p>Excellent!</p>
+        }
+
+@case ('B'){
+            <p>Good job!</p>
+        }
+
+@case ('C'){
+            <p>keep practicing!</p>
+        }
+
+@default{
+            <p>Grade not available</p>
+        }
+    }
+
 
