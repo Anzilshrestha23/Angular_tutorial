@@ -12,8 +12,8 @@ export class DataBindingLabComponent {
   name : string = "User"
   isoff: boolean = true;
   studentName: string ="";
-  username: string= "Anzil";
-  selectedCourse: string = 'Angular';
-  character: string= "Spiderman";
+  username: string= "";
+  selectedCourse: string = '';
+  character: string= '';
 
 }

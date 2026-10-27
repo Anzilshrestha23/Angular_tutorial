@@ -105,3 +105,15 @@ Suppose you have a variable called userRole that can be "admin", "student", or "
 You want to show a different dashboard message for each role.
 
 You could write several @if conditions, but @switch is usually clearer when you are checking one expression against several specific values.
+
+***Useful contextual variables in @for
+Angular provides built-in variables that help you build richer lists.
+
+Variable        Meaning
+	          
+$index	      Current item index, starting at 0
+$first      	Whether this is the first item
+$last        	Whether this is the last item
+$even       	Whether the index is even
+$odd	        Whether the index is odd
+$count	      Total number of items
