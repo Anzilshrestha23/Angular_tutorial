@@ -22,6 +22,7 @@ export class DirectivesControlFlowComponent {
   numbers = [1, 2, 3, 4]
   elements=['hydrogen', 'helium', 'lithium'];
   fontsize = 24;
+
+  
 }
 
-// using the ngstyle binding
