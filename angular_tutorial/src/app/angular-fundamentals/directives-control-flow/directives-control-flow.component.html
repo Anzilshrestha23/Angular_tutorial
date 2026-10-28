@@ -52,3 +52,10 @@
     <p>{{number}}</p>
 }
 </div>
+
+@for(element of elements; track element){
+    <p>{{element}}</p>
+
+}@empty{ 
+    <p>no result found!</p>
+}

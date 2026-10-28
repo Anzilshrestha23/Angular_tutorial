@@ -20,4 +20,5 @@ export class DirectivesControlFlowComponent {
   ];
 
   numbers = [1, 2, 3, 4]
+  elements=[];
 }
