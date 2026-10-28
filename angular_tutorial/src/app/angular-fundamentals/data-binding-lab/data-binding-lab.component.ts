@@ -9,11 +9,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './data-binding-lab.component.css'
 })
 export class DataBindingLabComponent {
-  name : string = "User"
+  name: string = "User"
   isoff: boolean = true;
-  studentName: string ="";
-  username: string= "";
+  studentName: string = "";
+  username: string = "";
   selectedCourse: string = '';
-  character: string= '';
+  character: string = '';
 
 }

@@ -5,12 +5,12 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-directives-control-flow',
   standalone: true,
-  imports: [FormsModule, NgSwitch,NgStyle, NgClass],
+  imports: [FormsModule, NgSwitch, NgStyle, NgClass],
   templateUrl: './directives-control-flow.component.html',
   styleUrl: './directives-control-flow.component.css'
 })
 export class DirectivesControlFlowComponent {
-  marks: number =  80;
+  marks: number = 80;
   grade: string = '';
   //  students =['Anzil','Rancho','Ranbir','Krishav'];
   students = [
@@ -20,9 +20,9 @@ export class DirectivesControlFlowComponent {
   ];
 
   numbers = [1, 2, 3, 4]
-  elements=['hydrogen', 'helium', 'lithium'];
+  elements = ['hydrogen', 'helium', 'lithium'];
   fontsize = 24;
 
-  
+
 }
 
