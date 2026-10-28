@@ -117,3 +117,15 @@ $last        	Whether this is the last item
 $even       	Whether the index is even
 $odd	        Whether the index is odd
 $count	      Total number of items
+
+
+note: [ngStyle] lets us to apply multiple style to an object whereas the direct style propertyy binding[style] gives the application of the single or individual style at a time.
+
+
+When should you use [style] versus [ngStyle]?
+
+Situation                 	        Recommended approach
+Change one CSS property	              [style.color]
+Set one property with a unit	        [style.font-size.px]
+Apply several computed styles	        [ngStyle]
+Define a reusable visual state      	Often use CSS classes with [class] or [ngClass]

@@ -1,16 +1,16 @@
-import { NgSwitch } from '@angular/common';
+import { NgStyle, NgSwitch } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-directives-control-flow',
   standalone: true,
-  imports: [FormsModule, NgSwitch],
+  imports: [FormsModule, NgSwitch,NgStyle],
   templateUrl: './directives-control-flow.component.html',
   styleUrl: './directives-control-flow.component.css'
 })
 export class DirectivesControlFlowComponent {
-  marks: number = 39;
+  marks: number =  70;
   grade: string = '';
   //  students =['Anzil','Rancho','Ranbir','Krishav'];
   students = [
@@ -21,5 +21,7 @@ export class DirectivesControlFlowComponent {
 
   numbers = [1, 2, 3, 4]
   elements=['hydrogen', 'helium', 'lithium'];
-
+  fontsize = 24;
 }
+
+// using the ngstyle binding

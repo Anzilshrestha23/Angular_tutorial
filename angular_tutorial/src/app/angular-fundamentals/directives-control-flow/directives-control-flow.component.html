@@ -18,6 +18,12 @@
 
 </div>
 
+<!-- for the style binding -->
+ <strong [style.color]="marks>=40? 'green' : 'red' ">
+        Result: {{marks>=40? 'Pass' : 'Fail'}}
+ </strong>
+
+ <br>
 
 <input type="text" [(ngModel)]="grade">
 
@@ -60,7 +66,13 @@
     <p>no result found!</p>
 }
 
-<!-- for the style binding -->
- <strong [style.color]="marks>=40? 'green' : 'red' ">
-        Result: {{marks>=40? 'Pass' : 'Fail'}}
- </strong>
+<strong [ngStyle]="{
+        color: marks>=40? 'green': 'red',
+        fontSize: fontsize + 'px',
+        fontWeight: 'bold',
+    
+}"
+    
+>
+Result:{{marks>=40? 'pass' : 'fail'}} </strong>
+
