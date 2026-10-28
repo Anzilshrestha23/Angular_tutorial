@@ -53,8 +53,8 @@
 }
 </div>
 
-@for(element of elements; track element){
-    <p>{{element}}</p>
+@for(element of elements; track element; let i = $index){
+    <p>{{i+1}}.{{element}}</p>
 
 }@empty{ 
     <p>no result found!</p>
