@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './directives-control-flow.component.css'
 })
 export class DirectivesControlFlowComponent {
-  marks: number = 100;
+  marks: number = 39;
   grade: string = '';
   //  students =['Anzil','Rancho','Ranbir','Krishav'];
   students = [
@@ -21,4 +21,5 @@ export class DirectivesControlFlowComponent {
 
   numbers = [1, 2, 3, 4]
   elements=['hydrogen', 'helium', 'lithium'];
+
 }
