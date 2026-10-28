@@ -1,4 +1,7 @@
-.style{
-    color: blue;
-    font-size: 45px;
-  }
+.pass{
+    color: green;
+}
+.fail{
+    color: red;
+}
+

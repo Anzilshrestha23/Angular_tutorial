@@ -78,4 +78,4 @@ Result:{{marks>=40? 'pass' : 'fail'}} </strong>
 
 <!-- using the [ngClass]  for dynamic styling -->
 
-<strong class="style">"Be unpredictable"</strong>
+<strong [ngClass]="marks>=40? 'pass' : 'fail' ">{{marks>=40? 'Pass':'Fail'}}</strong>

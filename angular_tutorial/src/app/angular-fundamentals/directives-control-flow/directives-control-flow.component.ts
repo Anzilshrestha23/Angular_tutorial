@@ -1,16 +1,16 @@
-import { NgStyle, NgSwitch } from '@angular/common';
+import { NgClass, NgStyle, NgSwitch } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-directives-control-flow',
   standalone: true,
-  imports: [FormsModule, NgSwitch,NgStyle],
+  imports: [FormsModule, NgSwitch,NgStyle, NgClass],
   templateUrl: './directives-control-flow.component.html',
   styleUrl: './directives-control-flow.component.css'
 })
 export class DirectivesControlFlowComponent {
-  marks: number =  70;
+  marks: number =  80;
   grade: string = '';
   //  students =['Anzil','Rancho','Ranbir','Krishav'];
   students = [
