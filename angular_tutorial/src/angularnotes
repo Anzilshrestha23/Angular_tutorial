@@ -106,7 +106,7 @@ You want to show a different dashboard message for each role.
 
 You could write several @if conditions, but @switch is usually clearer when you are checking one expression against several specific values.
 
-***Useful contextual variables in @for
+***********Useful contextual variables in @for
 Angular provides built-in variables that help you build richer lists.
 
 Variable        Meaning
@@ -129,3 +129,64 @@ Change one CSS property	              [style.color]
 Set one property with a unit	        [style.font-size.px]
 Apply several computed styles	        [ngStyle]
 Define a reusable visual state      	Often use CSS classes with [class] or [ngClass]
+
+
+***Final revision sheet
+
+Topic	                        Syntax to remember
+
+Conditional rendering	        @if (condition) { ... }
+Alternative branch	          @else { ... }
+Additional condition	        @else if (condition) { ... }
+Multiple fixed cases	        @switch (value) { ... }
+Specific case	                @case (value) { ... }
+Default case	                @default { ... }
+List rendering	              @for (item of items; track item.id) { ... }
+Empty collection	            @empty { ... }
+Dynamic CSS property	        [style.color]="expression"
+Multiple dynamic styles	      [ngStyle]="styleObject"
+Conditional CSS classes	      [ngClass]="classObject"
+One conditional class	        [class.active]="condition"
+
+
+
+
+******Components & Data Binding Deep Dive
+
+01.Splitting applications into components
+
+02.Property binding and custom properties with @Input
+
+03.Event binding and custom events with @Output
+
+04.View encapsulation and component styles
+
+05.Local template references
+
+06.@ViewChild and accessing view elements
+
+07.Content projection with ng-content
+
+08.Component lifecycle and lifecycle hooks
+
+09.@ContentChild and accessing projected content
+
+
+****Part	What it does
+@Component	    Tells Angular that this class defines a component
+selector            	Defines the element name used to place the component in a template
+standalone: true	    Allows the component to manage its own template dependencies without an NgModule  declaration
+imports              	Lists directives, components, and pipes used in its template
+templateUrl	          Points to the HTML template
+styleUrl	            Points to the component stylesheet
+export class	        Defines the TypeScript class
+
+
+****Custom properties with @Input()
+
+@Input() allows a parent component to supply a value to a child component.
+
+Think of the child as a reusable machine. The parent supplies the data, and the child uses it to produce the correct UI.
+
+******Is the child component inside the parent component?
+Yes, visually and structurally, but not literally inside the parent's TypeScript class. This distinction is important.

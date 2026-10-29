@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 export class DirectivesControlFlowComponent {
   marks: number = 80;
   grade: string = '';
-  //  students =['Anzil','Rancho','Ranbir','Krishav'];
   students = [
     { id: 102, name: 'Anzil', marks: 85 },
     { id: 101, name: 'Aarav', marks: 72 },
