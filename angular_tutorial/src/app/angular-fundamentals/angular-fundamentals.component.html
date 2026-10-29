@@ -1,4 +1,7 @@
 <app-data-binding-lab></app-data-binding-lab>
 <app-directives-control-flow></app-directives-control-flow>
-<app-components-data-binding-deep-dive [name]="studentname" ,
-    [marks]="studentmarks"></app-components-data-binding-deep-dive>
+
+@for(student of students ; track student.id){
+<app-components-data-binding-deep-dive [name]="student.name" , [marks]="student.marks">
+</app-components-data-binding-deep-dive>
+}

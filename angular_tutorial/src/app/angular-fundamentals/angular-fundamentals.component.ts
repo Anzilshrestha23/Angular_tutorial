@@ -12,7 +12,9 @@ import { ComponentsDataBindingDeepDiveComponent } from './components-data-bindin
 })
 export class AngularFundamentalsComponent {
 
-  studentname = 'krishav';
-  studentmarks = 45;
+  students = [
+    { id: 1, name: 'Krishav', marks: 80 },
+    { id: 2, name: 'Anup', marks: 90 },
+  ];
 
 }
